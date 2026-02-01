@@ -7,7 +7,8 @@ defmodule TodoList do
   end
 
   def main() do
+    tasks = [""]
     IO.puts "TODO LIST\n"
-    ToDoInterface.run()
+    ToDoInterface.run(tasks)
   end
 end
