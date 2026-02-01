@@ -1,5 +1,5 @@
 defmodule TodoList do
-  use Application
+  use Todolist.todo
 
   def start(_type, _args) do
     TodoList.main()
@@ -7,6 +7,11 @@ defmodule TodoList do
   end
 
   def main() do
+    IO.puts "TODO LIST\n"
 
+    IO.puts "
+
+
+    "
   end
 end
