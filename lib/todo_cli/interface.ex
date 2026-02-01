@@ -1,4 +1,7 @@
 defmodule ToDoInterface do
+  @moduledoc """
+    This Module contains the main interface of the program
+  """
   def run() do
     IO.puts("
     [1] See All Notes
