@@ -1,4 +1,5 @@
 defmodule ToDoInterface do
+  alias ToDoLogic
   @moduledoc """
     This Module contains the main interface of the program where it
     handles the CLI visual interface and user interactions
