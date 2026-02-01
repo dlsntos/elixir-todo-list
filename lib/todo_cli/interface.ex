@@ -1,6 +1,14 @@
 defmodule ToDoInterface do
   @moduledoc """
-    This Module contains the main interface of the program
+    This Module contains the main interface of the program where it
+    handles the CLI visual interface and user interactions
+
+    ##Features
+      - See All your Notes
+      - Add a note
+      - Modify a note
+      - Delete a note
+
   """
   def run() do
     IO.puts("
