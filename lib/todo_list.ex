@@ -1,5 +1,5 @@
 defmodule TodoList do
-  use Todolist.todo
+  alias ToDoInterface
 
   def start(_type, _args) do
     TodoList.main()
@@ -8,10 +8,6 @@ defmodule TodoList do
 
   def main() do
     IO.puts "TODO LIST\n"
-
-    IO.puts "
-
-
-    "
+    ToDoInterface.run()
   end
 end
