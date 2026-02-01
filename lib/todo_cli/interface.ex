@@ -4,18 +4,18 @@ defmodule ToDoInterface do
     handles the CLI visual interface and user interactions
 
     ##Features
-      - See All your Notes
-      - Add a note
-      - Modify a note
-      - Delete a note
+      - See All TODOs
+      - Add a TODO
+      - Modify a TODO
+      - Delete a TODO
 
   """
   def run() do
     IO.puts("
-    [1] See All Notes
-    [2] Add Note
-    [3] Modify Note
-    [4] Delete Note
+    [1] See TODO List
+    [2] Add a task
+    [3] Modify a task
+    [4] Delete a task
     [5] Quit
     ")
 
@@ -23,10 +23,10 @@ defmodule ToDoInterface do
     IO.puts(choice)
 
     case choice do
-      "1" -> IO.puts(:"See all notes")
-      "2" -> IO.puts(:"Add Note")
-      "3" -> IO.puts(:"Modify note")
-      "4" -> IO.puts(:"Delete Note")
+      "1" -> IO.puts(:"See List")
+      "2" -> IO.puts(:"Add a task")
+      "3" -> IO.puts(:"Modify a task")
+      "4" -> IO.puts(:"Delete a task")
       "5" -> IO.puts(:"Quit")
     end
 
