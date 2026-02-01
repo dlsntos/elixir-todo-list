@@ -11,7 +11,7 @@ defmodule ToDoInterface do
       - Delete a TODO
 
   """
-  def run() do
+  def run(tasks) do
     IO.puts("
     [1] See TODO List
     [2] Add a task
@@ -24,7 +24,7 @@ defmodule ToDoInterface do
     IO.puts(choice)
 
     case choice do
-      "1" -> IO.puts(:"See List")
+      "1" -> ToDoLogic.showToDos(tasks)
       "2" -> IO.puts(:"Add a task")
       "3" -> IO.puts(:"Modify a task")
       "4" -> IO.puts(:"Delete a task")
