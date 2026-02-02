@@ -1,5 +1,5 @@
-defmodule ToDoInterface do
-  alias ToDoLogic
+defmodule Todo.CLI do
+  alias Todo
   @moduledoc """
     This Module contains the main interface of the program where it
     handles the CLI visual interface and user interactions
@@ -25,9 +25,9 @@ defmodule ToDoInterface do
     choice = IO.gets(">:")  |> String.trim()
 
     case choice do
-      "1" -> ToDoLogic.show_to_dos(tasks)
-      "2" -> ToDoLogic.add_task(tasks)
-      "3" -> ToDoLogic.delete_task(tasks)
+      "1" -> Todo.show_to_dos(tasks)
+      "2" -> Todo.add_task(tasks)
+      "3" -> Todo.delete_task(tasks)
       "4" -> IO.puts(:"Quit")
        _  -> IO.puts("\nOnly choose from [1] - [4]\n")
              run(tasks)

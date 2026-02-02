@@ -1,5 +1,5 @@
 defmodule TodoList do
-  alias ToDoInterface
+  alias Todo.CLI
 
   @moduledoc """
   The entry point of the TODO list app
@@ -22,6 +22,6 @@ defmodule TodoList do
        $$/    $$$$$$/  $$$$$$$/   $$$$$$/        $$$$$$$$/ $$$$$$/  $$$$$$/    $$/"
 
     IO.puts "#{logo}"
-    ToDoInterface.run(tasks)
+    CLI.run(tasks)
   end
 end
