@@ -1,6 +1,5 @@
 defmodule TodoList do
   alias ToDoInterface
-
   def start(_type, _args) do
     TodoList.main()
     Supervisor.start_link([], strategy: :one_for_one)
@@ -8,7 +7,17 @@ defmodule TodoList do
 
   def main() do
     tasks = [""]
-    IO.puts "TODO LIST\n"
+    logo = "
+         ________  ______   _______    ______         __        ______   ______   ________
+    /        |/      \ /       \  /      \       /  |      /      | /      \ /        |
+    $$$$$$$$//$$$$$$  |$$$$$$$  |/$$$$$$  |      $$ |      $$$$$$/ /$$$$$$  |$$$$$$$$/
+       $$ |  $$ |  $$ |$$ |  $$ |$$ |  $$ |      $$ |        $$ |  $$ \__$$/    $$ |
+       $$ |  $$ |  $$ |$$ |  $$ |$$ |  $$ |      $$ |        $$ |  $$      \    $$ |
+       $$ |  $$ |  $$ |$$ |  $$ |$$ |  $$ |      $$ |        $$ |   $$$$$$  |  $$ |
+       $$ |  $$ \__$$ |$$ |__$$ |$$ \__$$ |        $$ |_____  _$$ |_ /  \__$$ |   $$ |'
+       $$/    $$$$$$/  $$$$$$$/   $$$$$$/        $$$$$$$$/ $$$$$$/  $$$$$$/    $$/"
+
+    IO.puts "#{logo}"
     ToDoInterface.run(tasks)
   end
 end
