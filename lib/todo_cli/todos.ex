@@ -8,4 +8,10 @@ defmodule ToDoLogic do
     end)
     ToDoInterface.run(tasks)
   end
+
+  def addTask(tasks) do
+    task = IO.gets("Add a new task>: ") |> String.trim()
+    newTask = tasks ++ [task]
+    ToDoInterface.run(newTask)
+  end
 end
