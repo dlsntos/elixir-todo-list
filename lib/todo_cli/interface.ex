@@ -26,6 +26,8 @@ defmodule ToDoInterface do
       "2" -> ToDoLogic.addTask(tasks)
       "3" -> ToDoLogic.deleteTask(tasks)
       "4" -> IO.puts(:"Quit")
+       _  -> IO.puts("\nOnly choose from [1] - [4]\n")
+             run(tasks)
     end
 
   end
