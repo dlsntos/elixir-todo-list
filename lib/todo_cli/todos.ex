@@ -49,6 +49,11 @@ defmodule Todo do
       end
     end)
     task = IO.gets("Enter the number of the task you want to remove:> ") |> String.trim()  |> String.to_integer()
+
+    if task > length(tasks) do
+      IO.puts("Only input the listed tasks")
+    end
+
     deletedTask = List.delete_at(tasks, task)
     Todo.CLI.run(deletedTask)
   end
