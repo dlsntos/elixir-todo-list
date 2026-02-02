@@ -6,9 +6,6 @@ A Simple TODO list CLI app to practice my knowledge in the Elixir Programming La
 - TODO list interface
   - polish cli ui
 
-- TODO list Logic functions
-  - Modify Task
-
 - Local Storage Logic 
 
 - others

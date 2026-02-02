@@ -15,9 +15,8 @@ defmodule ToDoInterface do
     IO.puts("
     [1] See TODO List
     [2] Add a task
-    [3] Modify a task
-    [4] Delete a task
-    [5] Quit
+    [3] Delete a task
+    [4] Quit
     ")
 
     choice = IO.gets(">:")  |> String.trim()
@@ -25,9 +24,8 @@ defmodule ToDoInterface do
     case choice do
       "1" -> ToDoLogic.showToDos(tasks)
       "2" -> ToDoLogic.addTask(tasks)
-      "3" -> IO.puts(:"Modify a task")
-      "4" -> ToDoLogic.deleteTask(tasks)
-      "5" -> IO.puts(:"Quit")
+      "3" -> ToDoLogic.deleteTask(tasks)
+      "4" -> IO.puts(:"Quit")
     end
 
   end

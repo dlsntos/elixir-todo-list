@@ -1,6 +1,8 @@
 defmodule ToDoLogic do
   alias ToDoInterface
-
+  @moduledoc """
+  This module contains all the business logic of the TODO list app
+  """
   def showToDos(tasks) do
     IO.puts("List of tasks")
     Enum.each(Enum.with_index(tasks), fn {task, index} ->
