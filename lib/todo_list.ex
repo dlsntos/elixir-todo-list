@@ -1,5 +1,9 @@
 defmodule TodoList do
   alias ToDoInterface
+
+  @moduledoc """
+  The entry point of the TODO list app
+  """
   def start(_type, _args) do
     TodoList.main()
     Supervisor.start_link([], strategy: :one_for_one)
