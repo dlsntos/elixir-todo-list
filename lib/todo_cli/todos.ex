@@ -26,6 +26,7 @@ defmodule ToDoLogic do
   def deleteTask(tasks) do
     if length(tasks) === 1 do
       IO.puts("There are no tasks available to remove")
+      ToDoInterface.run(tasks)
     else
       Enum.each(Enum.with_index(tasks), fn {task, index} ->
         unless index === 0 do
