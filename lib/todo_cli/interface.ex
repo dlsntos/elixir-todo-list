@@ -12,10 +12,14 @@ defmodule ToDoInterface do
   """
   def run(tasks) do
     IO.puts("
+    ________________________________________________________________________________________________________
+    [Instructions] - Choose a number
+    \n
     [1] See TODO List
     [2] Add a task
     [3] Delete a task
     [4] Quit
+    ________________________________________________________________________________________________________
     ")
 
     choice = IO.gets(">:")  |> String.trim()
