@@ -26,7 +26,7 @@ defmodule ToDoInterface do
       "1" -> ToDoLogic.showToDos(tasks)
       "2" -> ToDoLogic.addTask(tasks)
       "3" -> IO.puts(:"Modify a task")
-      "4" -> IO.puts(:"Delete a task")
+      "4" -> ToDoLogic.deleteTask(tasks)
       "5" -> IO.puts(:"Quit")
     end
 
