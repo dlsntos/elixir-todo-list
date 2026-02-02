@@ -3,6 +3,12 @@ defmodule ToDoLogic do
   @moduledoc """
   This module contains all the business logic of the TODO list app
   """
+
+  @doc """
+      showToDos function handles the logic for showing all the available
+      tasks in the todo list. If the list is empty, it will prompt a message
+      that says "No Tasks Available right now".
+    """
   def showToDos(tasks) do
     IO.puts("List of tasks")
     Enum.each(Enum.with_index(tasks), fn {task, index} ->
@@ -17,12 +23,20 @@ defmodule ToDoLogic do
     ToDoInterface.run(tasks)
   end
 
+  @doc """
+    The addTask function handles the logic for adding a new task.
+  """
   def addTask(tasks) do
     task = IO.gets("Add a new task>: ") |> String.trim()
     newTask = tasks ++ [task]
     ToDoInterface.run(newTask)
   end
 
+  @doc """
+    The deleteTask function handles the logic for deleting a task.
+    if there are no tasks available, it will prompt that
+    "There are no tasks available to remove".
+  """
   def deleteTask(tasks) do
     if length(tasks) === 1 do
       IO.puts("There are no tasks available to remove")
