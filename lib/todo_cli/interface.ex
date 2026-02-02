@@ -25,7 +25,7 @@ defmodule ToDoInterface do
 
     case choice do
       "1" -> ToDoLogic.showToDos(tasks)
-      "2" -> IO.puts(:"Add a task")
+      "2" -> ToDoLogic.addTask(tasks)
       "3" -> IO.puts(:"Modify a task")
       "4" -> IO.puts(:"Delete a task")
       "5" -> IO.puts(:"Quit")
