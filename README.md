@@ -14,7 +14,7 @@ A Simple TODO list CLI app to practice my knowledge in the Elixir Programming La
 - others
   - add error handling
 
-**TASKS ACCOMPLISHED **
+**TASKS ACCOMPLISHED**
   - See All Tasks
   - Add Task
   - Delete Task
