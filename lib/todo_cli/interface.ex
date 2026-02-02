@@ -21,7 +21,6 @@ defmodule ToDoInterface do
     ")
 
     choice = IO.gets(">:")  |> String.trim()
-    IO.puts(choice)
 
     case choice do
       "1" -> ToDoLogic.showToDos(tasks)
