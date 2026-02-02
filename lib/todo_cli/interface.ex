@@ -25,9 +25,9 @@ defmodule ToDoInterface do
     choice = IO.gets(">:")  |> String.trim()
 
     case choice do
-      "1" -> ToDoLogic.showToDos(tasks)
-      "2" -> ToDoLogic.addTask(tasks)
-      "3" -> ToDoLogic.deleteTask(tasks)
+      "1" -> ToDoLogic.show_to_dos(tasks)
+      "2" -> ToDoLogic.add_task(tasks)
+      "3" -> ToDoLogic.delete_task(tasks)
       "4" -> IO.puts(:"Quit")
        _  -> IO.puts("\nOnly choose from [1] - [4]\n")
              run(tasks)
