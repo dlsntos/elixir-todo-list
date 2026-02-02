@@ -7,7 +7,6 @@ defmodule ToDoInterface do
     ##Features
       - See All TODOs
       - Add a TODO
-      - Modify a TODO
       - Delete a TODO
 
   """
