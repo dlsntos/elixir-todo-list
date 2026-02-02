@@ -4,7 +4,9 @@ defmodule ToDoLogic do
   def showToDos(tasks) do
     IO.puts("List of tasks")
     Enum.each(Enum.with_index(tasks), fn {task, index} ->
-      IO.puts("#{index}. #{task}")
+      unless index == 0 do
+        IO.puts("#{index}. #{task}")
+      end
     end)
     ToDoInterface.run(tasks)
   end
